@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فطره</title>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/Article.css">
+  <link rel="stylesheet" href="../css/slidebar.css">
+  <link rel="stylesheet" href="../css/mediaquery.css">
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <section class="mt-4">
+    <div class="side">
+      <div class="toggle-btn container">
+        <div class="content ">
+          <div class=" content-form ">
+            <i onclick="toggleSidebar()" id="sideBar" class="fa-solid fa-bars"></i>
+            <h6> الصفحة الرئيسية </h6>
+          </div>
+          <div class="  " style="width: 100%">
+            <form action="" class="formAction">
+              <div class="nav-form">
+                <div class="input-navbar-side" id="search-icon">
+                  <img src="../assets/search.png" alt="icon" style="width: 2rem;" onclick="toggleSearchContainer()" />
+                  <!-- <i class="fa-solid fa-search  search-icon"></i> -->
+                  <input type="search" id="search-input" class="search-input" style="display: none">
+                </div>
+                <div class="icons-navbar " id="search-container">
+                  <div class="icon-nav ">
+                    <div>
+                      <i id="toggleBtn" class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="globe ">
+                      <i class="fa-solid fa-globe"></i>
+                      <span>English</span>
+                    </div>
+                    <div>
+                      <li class="dropdown">
+                      <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/Notifications.png" style="width: 18px;" class="fa-bell" alt="">
+                      </li>
+                      <ul class="dropdown-menu Notifications-menu " aria-labelledby="dropdownMenuButton1">
+
+                        <li>
+                          <a class="dropdown-item" href="../subscription.html">
+                            <div class="Notifications">
+                              <div>
+                                <img src="../assets/Icon.png" alt="">
+                              </div>
+                              <div>
+                                <h5>تذكير</h5>
+                                <p>لقد اقترب موعد قياس الدهون</p>
+                              </div>
+                              <div>
+                                <img src="../assets/Close button.png" alt="">
+                              </div>
+                            </div>
+
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="../subscription.html">
+                            <div class="Notifications">
+                              <div>
+                                <img src="../assets/Icon.png" alt="">
+                              </div>
+                              <div>
+                                <h5>تذكير</h5>
+                                <p>لقد اقترب موعد قياس الدهون</p>
+                              </div>
+                              <div>
+                                <img src="../assets/Close button.png" alt="">
+                              </div>
+                            </div>
+
+                          </a>
+                        </li>
+
+
+
+                      </ul>
+                      </li>
+                    </div>
+                    <div class="user">
+                      <i class="fa-solid fa-gear"></i>
+                      <li class="dropdown">
+                      <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        الاعدادات
+                      </li>
+
+                      <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="../subscription.html">الاشتراك في المتابعات</a></li>
+                        <li><a class="dropdown-item" href="../phone-col.html"> طلب مكالمة خاصة</a></li>
+                        <li><a class="dropdown-item" href="../history.html">سجل نشاطك اليومي </a></li>
+                        <li><a class="dropdown-item" href="information.html">بياناتي </a></li>
+                        <li><a class="dropdown-item" href="register.html"> تسجيل خروج </a></li>
+                      </ul>
+                      </li>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sideBar" id="closeSideBar">
+        <button class="closeBtn" onclick="handleBtnClose()">X</button>
+        <div class="logo">
+          <div class="t-circle ">
+            <div class="four-circle"></div>
+            <div class="first-circle"></div>
+          </div>
+          <a class="navbar-brand " href="indexLogin.html">
+            <img class="img-Logo" src="../assets/Logo.png" alt="">
+            <span> </span>
+          </a>
+        </div>
+        <a href="indexLogin.html" class="active">الرئيسية</a>
+        <a href="fastM.html">قياس الدهون </a>
+        <a href="meals.html">تصميم الوجبات </a>
+        <a href="recieps.html"> الوصفات</a>
+        <a href="posts.html"> البوستات</a>
+        <a href="pageVideo.html">الفيديوهات</a>
+        <button class="dropdown-btn ">
+          <i class="fa fa-caret-down"></i>
+          المقالات
+        </button>
+        <div class="dropdown-container">
+          <a href="ArticleTwo.html">المقال 1</a>
+          <a href="ArticleTwo.html">المقال 2</a>
+          <a href="ArticleTwo.html">المقال 3</a>
+        </div>
+        <a href="sleeping.html">مواعيد النوم</a>
+        <a href="walking.html">مواعيد المشي</a>
+        <a href="size.html">قياساتي</a>
+        <a href="information.html">بياناتي</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary   container " id="navbar">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand" href="indexLogin.html" style="width: 5rem;display: flex;justify-content: center;">
+            <img class="img-Logo" src="../assets/Logo.png" alt="logo" style="width: 100%;height: 100%;">
+            <span> </span>
+          </a>
+        </div>
+        <!-- <i   id="toggleBtn" class="fa-solid fa-moon"></i> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars"></i>
+
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="indexLogin.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fastM.html">قياس الدهون </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meals.html"> تصميم الوجبات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recieps.html"> الوصفات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="posts.html"> البوستات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pageVideo.html"> الفيديوهات </a>
+            </li>
+            <button class="dropdown-btn   ">
+              <i class="fa fa-caret-down"></i>
+              المقالات
+            </button>
+            <div class="dropdown-container">
+              <a href="ArticleTwo.html">المقال 1</a>
+              <a href="ArticleTwo.html">المقال 2</a>
+              <a href="ArticleTwo.html">المقال 3</a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="sleeping.html"> مواعيد النوم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="walking.html"> مواعيد المشي </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="size.html"> قياساتي </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="information.html"> بياناتي </a>
+            </li>
+
+
+          </ul>
+          <div class="btn d-flex align-items-center">
+
+            <button>
+              <a style="text-decoration: none;" href="htmlpages2/register.html"> تسجيل الخروج
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+  <!-- =====start hero -->
+
+
+  <!-- =====end hero -->
+  <!--  -->
+  <div class="circle">
+    <div class="t-circle ">
+      <div class="four-circle"></div>
+      <div class="first-circle"></div>
+
+    </div>
+    <div class="e-circle">
+      <div class="secand-circle"></div>
+      <div class="three-circle"></div>
+
+
+    </div>
+
+  </div>
+  <section id="meals">
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col head-t">
+            <div class="text-hero col-md-6 col-sm-12 animate_animated animate_backInLeft ">
+              <h2>
+                فطرة
+
+              </h2>
+              <h3> خلال دقائق و100% مجانا
+              </h3>
+              <p>احصل على نظام غذائي للصيام المتقطع</p>
+
+              <div class="btn-hero">
+                <button class="btn-text-hero ">
+                  الخطوات
+                  <i class="fa-solid fa-arrow-left "></i>
+                  <span class="circle"></span>
+                </button>
+                <button class="btn-text-hero">
+                  ما هو مركز فطرة؟<i class="fa-solid fa-arrow-left "></i>
+                  <span class="circle"></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12  image-sec animate_animated animate_backInRight">
+              <img src="../assets/head-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="second-section container">
+
+      <div class="row">
+        <div class="col head-b  ">
+
+          <div class="second-section-text  animate_animated animatebackInRight animate_delay-1s ">
+            <h2>رؤيتنا</h2>
+            <p>تمثل رؤيتنا في إنشاء بيئة تجزئة رقمية نابضة<br> بالحياة ومزدهرة في مصر وما بعدها،<br> والتي يمكن للجميع
+              الوصول إليها بسهولة <br>وتساعد الاشخاص على الصيام المتقطع.</p>
+          </div>
+          <div class="">
+            <div class="card-text  animate_animated animatebackInLeft  animate_delay-1s">
+              <h3>تمثل رؤيتنا في <br> إنشاء بيئة تجزئة <br>رقمية نابضة <br>بالحياة ومزدهرة</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section>
+      <h2 class="sec-three-text mb-5">اكتشف معنا</h2>
+      <div class="cards container">
+
+        <div class="card-section col-md-6 col-sm-12  col-lg-4 animate_animated animatebounceInRight animate_delay-1s  ">
+          <div>
+            <div>
+              <h2>نسبة الدهون</h2>
+              <p>ذا كنت مهتم بالحصول على نظامك الصحي الآن, فقط انضم الينا الآن
+              </p>
+              <a href="../detils.html">شاهد المزيد
+                <i class="fa-solid fa-arrow-left-long"></i>
+
+              </a>
+            </div>
+            <div class="image-card">
+
+              <img src="../assets/card1.png" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="card-section col-md-6 col-sm-12  col-lg-4 animate_animated animatebounceInDown animate_delay-1s  ">
+          <div>
+            <h2>تصميم الوجبات</h2>
+            <p>اذا كنت مهتم بالحصول على نظامك الصحي الآن, فقط انضم الينا </p>
+            <a href="detils.html">شاهد المزيد
+              <i class="fa-solid fa-arrow-left-long"></i>
+
+            </a>
+          </div>
+          <div class="image-card">
+            <img src="../assets/card2.png" alt="image">
+          </div>
+        </div>
+
+        <div class="card-section col-md-6 col-sm-12  col-lg-4  animate_animated animatebounceInLeft animate_delay-1s ">
+          <div>
+            <h2>الاستفسارات</h2>
+            <p>اذا كنت مهتم بالحصول على نظامك الصحي الآن, فقط انضم الينا الآن</p>
+            <a href="">شاهد المزيد
+
+
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+          </div>
+
+
+          <div class="image-card">
+            <img src="../assets/card3.png" alt="image">
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+    </section>
+
+
+    <section class="articlesContent mt-5">
+      <div class="container">
+        <h3 class="text-center mb-5">مقالات خصيصا لك</h3>
+        <div class="btn-main mb-5 ">
+          <button>الاكل الصحي </button>
+          <button>مخاطر زيادة الوزن</button>
+          <button>الصيام المتقطع</button>
+          <button>دليل الطعام الصحي</button>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-5 animate_animated animatebounceInRight animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain1.png" alt="">
+
+            </div>
+            <div class="text-article">
+              <div class="text-article">
+                <h6>هل الاكل الصحي مفيد؟ ولماذا؟</h6>
+                <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                  مفيد؟ ولماذا؟</p>
+                <a href="">اقراء المزيد</a>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 animate_animated animatebounceInUp animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain2.png" alt="">
+
+            </div>
+            <div class="text-article">
+
+              <h6>
+                هل الصيام مفيد للصحة؟ </h6>
+              <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                مفيد؟ ولماذا؟</p>
+              <a href="">اقراء المزيد</a>
+
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 animate_animated animatebounceInLeft animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain3.png" alt="">
+
+            </div>
+            <div class="text-article">
+              <h6>
+                اضرار السمنة والنحافة؟
+              </h6>
+              <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                مفيد؟ ولماذا؟</p>
+              <a href="">اقراء المزيد</a>
+
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 animate_animated animatebounceInRight animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain1.png" alt="">
+
+            </div>
+            <div class="text-article">
+              <h6>هل الاكل الصحي مفيد؟ ولماذا؟</h6>
+              <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                مفيد؟ ولماذا؟</p>
+              <a href="">اقراء المزيد</a>
+
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 animate_animated animatebounceInUp animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain2.png" alt="">
+
+            </div>
+            <div class="text-article">
+              <h6> هل الصيام مفيد للصحة؟ </h6>
+              <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                مفيد؟ ولماذا؟</p>
+              <a href="">اقراء المزيد</a>
+
+            </div>
+
+
+          </div>
+          <div class="col-md-4 mb-5 animate_animated animatebounceInLeft animate_delay-2s">
+            <div class="images">
+              <img class="w-100" src="../assets/Photomain3.png" alt="">
+
+            </div>
+            <div class="text-article">
+              <h6>
+                اضرار السمنة والنحافة؟ </h6>
+              <p>هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي مفيد؟ ولماذا؟هل الاكل الصحي
+                مفيد؟ ولماذا؟</p>
+              <a href="">اقراء المزيد</a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  -->
+    <!--
+      <article class="forms" >
+
+        <h2 class="text-forms mb-5 mt-5">تواصل معنا</h2>
+        <div class="d-flex">
+          <div class="text-form-icon">
+
+            <h4>(011) 6543 8974 210</h4> <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="text-form-icon">
+
+            <h4>hi@Fetra.com</h4> <i class="fa-regular fa-envelope"></i>
+          </div>
+        </div>
+
+        <form method="get" class="form-message" >
+          <div class="inputs-label" >
+            <div>
+              <div class="input-form-pageOne" >
+                <label for="username">الإسم الأول</label>
+                <input type="text" name="username" id="username">
+              </div>
+              <div class="input-form-pageOne">
+                <label for="tel">رقم الهاتف</label>
+                <input type="tel" id="tel" placeholder="+9964654758676">
+              </div>
+
+            </div>
+            <div>
+              <div class="input-form-pageOne">
+                <label for="username2">الإسم الثاني</label>
+                <input type="text" name="username2" id="username2">
+              </div>
+              <div class="input-form-pageOne"><label for="email">البريد الإلكتروني</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="form-textArea">
+            <label class="form-label" for="textAreaExample">الرسالة</label>
+
+            <textarea class="form-control" id="textAreaExample"
+              placeholder="اترك لنا رسالة بإستفسارك و سيتم التواصل معك" rows="8" cols="130"></textarea>
+          </div>
+
+
+          <div class="btn-form">
+            <button>ارسال</button>
+          </div>
+        </form>
+      </article> -->
+
+    <section class="forms">
+      <div class="text__head">
+        <h3 class="text__head-form">تواصل معنا</h3>
+        <div class="number__form">
+          <span>
+
+            (011) 6543 8974 210 <i class="fa-solid fa-phone"></i>
+          </span>
+          <span>
+
+            hi@Fetra.com <i class="fa-regular fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+
+
+      <form action="" class="form__index">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"> الاسم الاول </span>
+            <input type="text" class="input__form">
+          </div>
+          <div class="input-box">
+            <span class="details"> الاسم الثاني </span>
+            <input type="text" class="input__form">
+          </div>
+          <div class="input-box">
+            <span class="details"> رقم الهاتف </span>
+            <input type="tel" class="input__form" placeholder="+9964654758676">
+          </div>
+          <div class="input-box">
+            <span class="details"> البريد الإلكتروني </span>
+            <input type="email" class="input__form" placeholder="example@gmail.com">
+          </div>
+          <div class="box__massege">
+            <span class="details"> الرساله </span>
+            <textarea name="" id="textarea" placeholder="اترك لنا رسالة بإستفسارك و سيتم التواصل معك"></textarea>
+          </div>
+        </div>
+        <div class="btn__form">
+          <button class="btn__form-index">ارسال</button>
+
+        </div>
+      </form>
+
+    </section>
+    <!--  -->
+    <footer class="mt-5 py-5">
+      <div class=" footer-h  ">
+        <div class="text-footer  ">
+          <h4>أحصل على نظامك الصحي <span>نظامك الصحي </span>اليوم!</h4>
+          <p>احصل على نظامك الصحي اليوم...الان</p>
+          <button>إبدأ الآن</button>
+          <div>
+
+            <div class="">
+            </div>
+
+            <div class="head-ul">
+              <ul>
+                <div class="head">فطرة</div>
+
+                <li> <a href="">الرئيسية</a></li>
+                <li> <a href="">من نحن</a></li>
+                <li> <a href="">خدماتنا</a></li>
+                <li> <a href="">تواصل معنا</a></li>
+              </ul>
+              <ul>
+                <div class="head">الدعم</div>
+
+                <li> <a href="">اضافة رابط تويتر</a></li>
+                <li> <a href="">اضافة رابط لينكيد ان</a></li>
+                <li> <a href="">اضافة رابط فيس بوك</a></li>
+                <li> <a href="">اضافة رابط انستجرام</a></li>
+                <li></li>
+              </ul>
+              <ul class="list-ul">
+                <div class="head">الشروط و الأحكام</div>
+
+                <li> <a href="">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    8001240268
+                    <i></i>
+                  </a></li>
+                <li> <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    اسكندرية كلية الهندسة
+                  </a></li>
+                <li> <a href="">
+                    <i class="fa-solid fa-globe"></i>
+                    www.qpolicy.com.sa</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="image-footer ">
+
+          <img src="../assets/Animation - 1699977968880.gif" alt="">
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+    <div class="background-sidebar" id="backgroundSidebar" onclick="handleBtnClose()"></div>
+  </section>
+
+  <!-- end -->
+  <!-- js bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <!-- js -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

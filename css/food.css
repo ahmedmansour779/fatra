@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    background-color: var(--bg-color) !important;
+
+}
+.foodtext{
+    /* display: flex; */
+/* flex-shrink: 0; */
+
+
+
+}
+
+.head-food{
+    margin-right: 30px;
+    margin-top: 50px;
+    color: white;
+    font-size: 35px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.food{
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.food ul {
+    display: flex;
+flex-direction: column;
+align-items: start;
+color: white;
+/* line-height: 30px !important; */
+
+
+}
+.food ul h4{
+    color: white;
+    font-size: 30px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word
+}
+.food ul li {
+    margin: 5px !important;
+padding: 0 !important;
+list-style: initial;
+
+    color: white;
+font-size: 23px;
+font-family: Plus Jakarta Sans;
+font-weight: 500;
+line-height: 30px !important;
+word-wrap: break-word
+}
+.three-food{
+    /* margin-right: 0px; */
+    margin-top: 20px;
+}
+.three-food ul {
+display: flex;
+align-items: start;
+justify-content: center;
+flex-direction: column;
+}
+.three-food h4{
+    color: white;
+    font-size: 30px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word
+}
+.three-food ul li {
+    list-style: initial;
+    margin: 5px !important;
+    padding: 0 !important;
+
+        color: white;
+    font-size: 23px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 30px !important;
+    word-wrap: break-word
+}
+.head-title{
+    color: white;
+    font-size: 35px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+
+}
+.discription{
+    margin-top: 50px;
+    color: white;
+    font-size: 28px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 53.50px;
+    word-wrap: break-word
+}
+@media screen and(max-width:600px) {
+    .foodtext .row{
+        flex-direction: column;
+    }
+}

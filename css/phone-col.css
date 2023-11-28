@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+:root {
+    --bg-color: #07D184;
+    --text-color: #FFFFFF;
+    --btn-color: #FF9936;
+    --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
+        inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
+} .text-hero{margin-top: 50px;}
+.text-hero h4{
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+     font-size: 60px;
+     font-family: Plus Jakarta Sans;
+     font-weight: 800;
+     word-wrap: break-word;
+}
+@media (max-width:767px) {
+.text-hero h4{
+    font-size: 40px;
+}
+}
+.day-call{
+
+    margin-top: 100px;
+    /* border: 1px solid red; */
+display: flex;
+height: 500px;
+flex-direction: column;
+align-items: center;
+width: 80%;
+margin: 0 auto;
+justify-content: center;
+}
+form{
+    border-radius: 32px;
+background-color: #fff;
+    margin:  0 auto;
+    width: 90%;
+    height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+/* border: 1px solid red; */
+}
+form input{
+padding: 15px;
+margin: 0 auto  ;
+    width: 90%;
+    height: 80px;
+    border-radius: 32px;
+    border: 1px #DCDCDC solid;
+}
+.btn-save{
+    width: 170px;
+    height: 50px;
+    box-shadow: var(--shadow-set);
+    border-radius: 16px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 50px;
+    word-wrap: break-word;
+    background-color: var(--btn-color);
+    text-align: center;
+    text-decoration: none;
+}
+.btn-save:hover{
+    color: #fff;
+}

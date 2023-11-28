@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم الوجبات</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/food.css">
+    <link rel="stylesheet" href="../css/slidebar.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- font awesome -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- animation -->
+</head>
+
+<body>
+
+
+
+
+    <section  class="mt-4">
+        <div class="side">
+                <div class="toggle-btn">
+                  <div class="content ">
+                    <div class="d-flex align-items-center gap-3">
+                        <i  onclick="toggleSidebar()" id="sideBar" class="fa-solid fa-bars"></i>
+                        <h6>تصميم الوجبات </h6>
+                      </div>
+                      <div class="  " >
+                        <form action="" class="formAction">
+                          <div class="nav-form">
+                            <div class="input-navbar-side" id="search-icon">
+                              <i class="fa-solid fa-search  search-icon" onclick="toggleSearchContainer()" ></i>
+                              <input type="search" class="search-input"     >
+                            </div>
+                            <div class="icons-navbar " id="search-container"  >
+                            <div class="icon-nav " >
+            
+                              <div>
+                                <i id="toggleBtn" class="fa-solid fa-moon"></i>
+                              </div>
+                              <div class="globe ">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>English</span>
+                              </div>
+                              <div>
+                                <li class="dropdown">
+                                <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="../assets/Notifications.png" style="width: 18px;" class="fa-bell" alt="">
+                                </li>
+                                <ul class="dropdown-menu Notifications-menu " aria-labelledby="dropdownMenuButton1">
+            
+                                  <li>
+                                    <a class="dropdown-item" href="../subscription.html">
+                                      <div class="Notifications">
+                                        <div>
+                                          <img src="../assets/Icon.png" alt="">
+                                        </div>
+                                        <div>
+                                          <h5>تذكير</h5>
+                                          <p>لقد اقترب موعد قياس الدهون</p>
+                                        </div>
+                                        <div>
+                                          <img src="../assets/Close button.png" alt="">
+                                        </div>
+                                      </div>
+            
+                                    </a>
+                                  </li>
+            
+                                  <li>
+                                    <a class="dropdown-item" href="../subscription.html">
+                                      <div class="Notifications">
+                                        <div>
+                                          <img src="../assets/Icon.png" alt="">
+                                        </div>
+                                        <div>
+                                          <h5>تذكير</h5>
+                                          <p>لقد اقترب موعد قياس الدهون</p>
+                                        </div>
+                                        <div>
+                                          <img src="../assets/Close button.png" alt="">
+                                        </div>
+                                      </div>
+            
+                                    </a>
+                                  </li>
+            
+            
+            
+                                </ul>
+                                </li>
+                              </div>
+                              <div class="user">
+                                <i class="fa-solid fa-gear"></i>
+                                <li class="dropdown">
+                                <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  الاعدادات
+                                </li>
+            
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="../subscription.html">الاشتراك في المتابعات</a></li>
+                                  <li><a class="dropdown-item" href="../phone-col.html"> طلب مكالمة خاصة</a></li>
+                                  <li><a class="dropdown-item" href="../history.html">سجل نشاطك اليومي </a></li>
+                                  <li><a class="dropdown-item" href="information.html">بياناتي </a></li>
+                                  <li><a class="dropdown-item" href="register.html"> تسجيل خروج </a></li>
+                                </ul>
+                                </li>
+            
+                              </div>
+                            </div>
+            </div>
+            
+                          </div>
+                        </form>
+
+
+
+
+                    </div>
+                  </div>
+              </div>
+
+
+                  <div class="sideBar">
+                    <div class="logo" >
+                      <div class="t-circle ">
+                        <div class="four-circle"></div>
+                        <div class="first-circle"></div>
+
+                      </div>
+                      <a class="navbar-brand " href="indexLogin.html">
+                        <img  class="img-Logo"  src="../assets/Logo.png" alt="">
+                        <span>  </span>
+                      </a>
+                    </div>
+
+                        <a href="indexLogin.html">الرئيسية</a>
+
+                      <a href="fastM.html">قياس الدهون </a>
+
+
+                      <a href="meals.html">تصميم الوجبات </a>
+
+
+                      <a href="recieps.html"> الوصفات</a>
+
+                      <a href="posts.html"> البوستات</a>
+
+
+                      <a href="pageVideo.html">الفيديوهات</a>
+
+                      <button class="dropdown-btn ">
+                        <i class="fa fa-caret-down"></i>
+                        المقالات
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="ArticleTwo.html">المقال 1</a>
+                        <a href="ArticleTwo.html">المقال 2</a>
+                        <a href="ArticleTwo.html">المقال 3</a>
+                      </div>
+
+
+                      <a href="sleeping.html">مواعيد النوم</a>
+
+
+
+                      <a href="walking.html">مواعيد المشي</a>
+
+
+                      <a href="size.html">قياساتي</a>
+
+
+                      <a href="information.html">بياناتي</a>
+
+                  </div>
+               </div>
+               <nav class="navbar navbar-expand-lg bg-body-tertiary   " id="navbar">
+                <div class="container-fluid">
+                  <div class="logo" >
+                    <a class="navbar-brand" href="indexLogin.html">
+                      <img  class="img-Logo"  src="../assets/Logo.png" alt="">
+                      <span>  </span>
+                    </a>
+                  </div>
+                  <!-- <i   id="toggleBtn" class="fa-solid fa-moon"></i> -->
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indexLogin.html">الرئيسية</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="fastM.html">قياس الدهون  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="meals.html"> تصميم الوجبات  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="recieps.html">  الوصفات  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="posts.html">  البوستات  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pageVideo.html">  الفيديوهات  </a>
+                      </li>
+                      <button class="dropdown-btn ">
+                        <i class="fa fa-caret-down"></i>
+                        المقالات
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="ArticleTwo.html">المقال 1</a>
+                        <a href="ArticleTwo.html">المقال 2</a>
+                        <a href="ArticleTwo.html">المقال 3</a>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="sleeping.html">  مواعيد النوم </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="walking.html">  مواعيد المشي  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="size.html">  قياساتي  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="information.html">  بياناتي  </a>
+                      </li>
+
+
+                    </ul>
+                    <div class="btn d-flex align-items-center">
+
+                      <button>
+                        <a  style="text-decoration: none;" href="htmlpages2/register.html">               تسجيل الخروج
+            </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+            </section>
+
+
+
+
+  <div class="circle">
+    <div class="t-circle ">
+      <div class="four-circle"></div>
+      <div class="first-circle"></div>
+
+    </div>
+    <div class="e-circle">
+      <div class="secand-circle"></div>
+      <div class="three-circle"></div>
+
+
+    </div>
+
+  </div>
+
+<section id="meals">
+
+
+
+    <h2 class="head-food"> (عرض الوجبات):</h2>
+
+    <br />
+
+    <div class="foodtext container" >
+        <div class="row d-flex">
+            <div class="col">
+
+                <div class="food">
+
+                    <ul>
+                        <h4> الوجبه الأولي:</h4>
+                        <li>
+                            بعد الاستيقاظ بأربع ساعات
+
+                        </li>
+                        <li>
+                            100 جرام جبنة شيدر قليله الدسم (الوصفات)
+
+                        </li>
+                        <li>
+                            10 جرام زبده (الوصفات)
+
+                        </li>
+                        <li>
+                            25 جرام حليب جوز (الوصفات)
+
+                        </li>
+                        <li>
+                            طبق سلطة
+
+                        </li>
+                    </ul>
+
+
+
+
+                    <div>
+
+                        <ul>
+                            <h4>
+                                الوجبه الثانية:
+
+                            </h4>
+                            <li>
+                                بعد الوجبة الاولي بأربع ساعات
+
+                            </li>
+                            <li>
+                                150 جرام كبدة بقري مشويه (الوصفات)
+
+                            </li>
+                            <li>
+                                200 جرام بطاطس مسلوقه (الوصفات)
+
+                            </li>
+                            <li>
+                                طبق سلطة
+
+                            </li>
+                            <li>
+                                طبق صغير من الخضار المطبوخ
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="three-food">
+
+                    <ul>
+                        <h4>
+                            الوجبه الثالثة:
+
+                        </h4>
+                        <li>
+                            قبل النوم بأربع ساعات
+
+                        </li>
+                        <li>
+                            200 جرام جبنه قريش (الوصفات)
+
+                        </li>
+                        <li>
+                            25 جرام زبده (الوصفات)
+
+                        </li>
+                        <li>
+                            طبق سلطة
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="discription">
+                    <p>
+                        <b class="head-title">(برنامجك):</b>
+                        <br>
+                        <em> (طبق سلطة):</em>
+                        <br>
+                        عباره عن ( جرجير بقدونس كرفس كزبره فلفل الوان خيار طماطم بصل خس بلدي قليل ممنوع كابوتشا باذنجان
+                        مشوي ف كل الوجبات ) بامكانك حذف اي نوع لا تستطيع اكله فليس هناك شئ الزامي في الخضراوات كميه طبق
+                        سلطة حسب القدره المهم تنوعها.
+
+                        <br>
+                        <b>
+                            (الخضار المطبوخ)
+                        </b>
+                        <br>
+                        :
+                        عباره عن طبق صغير من ( باميه كوسه سبانخ ملوخيه فاصوليا خضراء بازلاء بدون جزر) مطبوخين بشوربه
+                        منزوعه الدسم.
+                        <br>
+                        <b>
+                            (الفاكهة المسموحه):
+
+                        </b>
+                        <br>
+                        يفضل عدم تناول اى فاكهة خلال اول اسبوعين من اتباع النظام علاجاً لإدمان الطعم المُحلى وبعد تحقيق
+                        النتيجة بعد اول اسبوعين يمكن ادخال " الفراوله,التفاح الاخضر,التوت,الافوكادو" بوزن 100 جم مع وجبة
+                        النشويات ثلات مرات اسبوعيا فقط.
+                        <br><b style="color: darkred;"> (تحذير) :</b>
+                        <br>
+
+                        يجب علي اي مريض بأمراض مزمنة ضغط ،قلب، سكر ،امراض كلي أو أمراض كبد أو نقرص و أمراض غير مزمنه اخد
+                        موافقه الطبيب المتابع له قبل الالتزام بالنظام الغذائي وذلك حرصا علي صحه المريض اولا 🌹
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+  </section>
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
