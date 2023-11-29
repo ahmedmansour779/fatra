@@ -76,7 +76,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 90%;
     margin-inline: auto;
     margin-top: 50px;
@@ -99,7 +99,6 @@
 .pro {
 
     margin-bottom: 120px;
-    margin-right: 15px !important;
     background: linear-gradient(180deg, #FF9936 0%, #DF716D 100%);
     box-shadow: 0px 2px 12px rgba(20.11, 19.66, 42.50, 0.08);
     border-radius: 24px;
@@ -114,9 +113,9 @@
 .card-text-pakege {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    margin-right: 15px;
     align-items: center;
+    margin: 0 !important;
+    padding: 1rem;
 }
 
 .card-text-pakege h4 {
@@ -259,4 +258,13 @@
         margin: 0 !important;
         padding: 0;
     }
+}
+
+.list-icon ul li p {
+    /* margin: 0; */
+    display: inline;
+}
+
+.col-md-4 {
+    width: auto !important;
 }
