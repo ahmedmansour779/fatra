@@ -105,14 +105,15 @@ body {
 }
 
 .logo {
-    margin-right: 10px;
-    width: 120px;
-    height: 100px;
+    /* margin-right: 10px; */
+    width: 3.5rem;
+    /* height: 100px; */
     /* background: rgb(32, 236, 32); */
     /* border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -2282,11 +2283,7 @@ footer {
 
     }
 
-    .image-main img {
-        height: 200px;
-        width: 20%;
 
-    }
 
     .head-ul {
         display: flex;
@@ -2775,9 +2772,6 @@ footer {
 
     }
 
-    .img-Logo {
-        margin-right: -100px;
-    }
 
     .card-section {
         width: 45% !important;
