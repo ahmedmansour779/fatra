@@ -1,7 +1,6 @@
 const searchInput = document.getElementById("search-input")
 const backgroundSidebar = document.getElementById("backgroundSidebar")
 
-// console.log(searchInput);
 
 function show() {
   document.getElementById("sidebar").classList.toggle("active");
@@ -36,7 +35,7 @@ function toggleInVisibility() {
     element.classList.add("d-block");
   }
 }
-//   sideBar
+//   sideBa
 let sidebar = document.querySelector(".sideBar");
 let content = document.querySelector(".content");
 // let meals = document.getElementById("meals");
@@ -151,21 +150,23 @@ var activeButton = document.getElementById("activeButton");
 var activeButtonWomen = document.getElementById("activeButtonWomen");
 // search side
 const searchContainer = document.getElementById("search-container");
-searchContainer.style.display = "block";
-
+// console.log(searchContainer);
 function toggleInputSearch() {
-  searchInput.style.display == "none" ?
+  searchInput.focus();
+  searchInput.style.display === "none" ?
     searchInput.style.display = "block" :
     searchInput.style.display = "none"
 }
 
+function hiddenIcons() {
+  searchContainer.style.display === "none" ?
+    searchContainer.style.display = "block" :
+    searchContainer.style.display = "none"
+}
+
 function toggleSearchContainer() {
   toggleInputSearch()
-  searchContainer.style.display =
-    (searchContainer.style.display === "none" ||
-      searchContainer.style.display === "")
-      ? "block"
-      : "none";
+  hiddenIcons()
 }
 
 activeButton.addEventListener("click", function () {
@@ -183,9 +184,6 @@ activeButtonWomen.addEventListener("click", function () {
 
 let x = document.getElementById("closeForm");
 
-document.getElementById("myButton").onclick = function () {
-  alert("Button clicked!");
-};
 
 function toggleDropdown() {
   var dropdown = document.getElementById("notificationDropdown");

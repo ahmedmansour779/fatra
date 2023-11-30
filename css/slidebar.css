@@ -180,10 +180,8 @@ body {
 }
 
 .input-navbar-side i {
-
-  position: absolute;
+  margin: 0;
   color: #777777;
-  right: 25px;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -587,12 +585,6 @@ ul.Notifications-menu.show:hover,
 
   }
 
-
-  .input-navbar-side .fa-search {
-    display: block;
-    margin-right: 20px;
-  }
-
   .content {
     position: relative;
     display: flex;
@@ -674,11 +666,7 @@ ul.Notifications-menu.show:hover,
   }
 }
 
-@media (max-width:1400px) and (min-width:993px) {
-  #search-container {
-    display: block !important;
-  }
-}
+
 
 .background-sidebar {
   position: fixed;

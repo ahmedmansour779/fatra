@@ -126,12 +126,6 @@ body {
     /* margin-bottom: 10px; */
 }
 
-@media (max-width:600px) {
-    .img-Logo {
-        width: 80px;
-        height: 80px;
-    }
-}
 
 /* start coding style head  */
 header {
@@ -2848,4 +2842,24 @@ footer {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+/* edit */
+
+.logo a,
+.logo a img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+/* edit */
+
+.search-icon {
+    margin-left: 2rem;
 }
