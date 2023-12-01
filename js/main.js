@@ -250,4 +250,3 @@ if (btnSidebarNew && sidebarNew) {
     sidebarNew.style.right = 0
   }
 }
-
