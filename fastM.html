@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +14,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
 
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary   " id="navbar">
     <div class="container-fluid">
-      <div class="logo" >
+      <div class="logo">
         <a class="navbar-brand" href="index.html">
-          <img  class="img-Logo img-fluid"  src="assets/Logo.png" alt="">
-          <span>  </span>
+          <img class="img-Logo img-fluid" src="assets/Logo.png" alt="">
+          <span> </span>
         </a>
       </div>
       <!-- <i   id="toggleBtn" class="fa-solid fa-moon"></i> -->
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span>
 
           <i class="fa-solid fa-bars"></i>
-</span>
+        </span>
 
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,19 +42,19 @@
             <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="fastM.html">نسبة الدهون  </a>
+            <a class="nav-link" href="fastM.html">نسبة الدهون </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="htmlpages2/login.html"> تصميم الوجبات  </a>
+            <a class="nav-link" href="htmlpages2/login.html"> تصميم الوجبات </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pageVideo.html">  الفيديوهات  </a>
+            <a class="nav-link" href="pageVideo.html"> الفيديوهات </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Article.html">  المقالات  </a>
+            <a class="nav-link" href="Article.html"> المقالات </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">  الاستفسارات  </a>
+            <a class="nav-link" href="contact.html"> الاستفسارات </a>
           </li>
 
 
@@ -59,8 +62,8 @@
         <div class="btn d-flex align-items-center">
           <a href="htmlpages2/login.html">الدخول</a>
           <button>
-            <a  style="text-decoration: none;" href="htmlpages2/register.html">              انشاء حساب
-</a>
+            <a style="text-decoration: none;" href="htmlpages2/register.html"> انشاء حساب
+            </a>
           </button>
         </div>
       </div>
@@ -83,22 +86,22 @@
     </div>
 
   </div>
-<section id="meals">
-  <section id="fats" class="mt-5">
-    <div class="container">
-      <h3 class="text-head">قياس نسبة الدهون</h3>
+  <section id="meals">
+    <section id="fats" class="mt-5">
+      <div class="container">
+        <h3 class="text-head">قياس نسبة الدهون</h3>
 
-      <div class="buttons">
         <div class="buttons">
-          <button class=" mb-4 men activeButton" id="activeButton"
-            onclick="document.getElementById('image-change').src='../assets/fastM.png' ,toggleVisibility()">رجل</button>
-          <button id="activeButtonWomen" class=" mb-4 women" onclick="document.getElementById('image-change').src='../assets/fastw.png'
+          <div class="buttons">
+            <button class=" mb-4 men activeButton" id="activeButton"
+              onclick="document.getElementById('image-change').src='../assets/fastM.png' ,toggleVisibility()">رجل</button>
+            <button id="activeButtonWomen" class=" mb-4 women" onclick="document.getElementById('image-change').src='../assets/fastw.png'
           ,toggleInVisibility()
         ">امرأة</button>
-        </div>
+          </div>
 
-      </div>
-      <!-- <form class="formFastM">
+        </div>
+        <!-- <form class="formFastM">
 
         <div class="style-form ">
           <div class="input-form">
@@ -151,134 +154,135 @@
 
 
 
-      <form action="" class="form__index">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details"> الوزن (كجم)  </span>
-            <input type="text" class="input__form">
+        <form action="" class="form__index">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"> الوزن (كجم) </span>
+              <input type="text" class="input__form">
+            </div>
+            <div class="input-box">
+              <span class="details"> الطول (سم) </span>
+              <input type="text" class="input__form">
+            </div>
+            <div class="input-box">
+              <span class="details"> الرقبة (سم) </span>
+              <input type="text" class="input__form" placeholder="">
+            </div>
+            <div class="input-box">
+              <span class="details"> الوسط (سم) </span>
+              <input type="text" class="input__form" placeholder="">
+            </div>
+            <div class="input-box d-none" id="newInput">
+              <span class="details "> المؤخرة (سم) </span>
+              <input type="text" class="input__form" placeholder="" id="newInput">
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">  الطول (سم) </span>
-            <input type="text" class="input__form">
+          <div class="btn__form">
+            <button class="btn__form-index">احسب</button>
+
           </div>
-          <div class="input-box">
-            <span class="details"> الرقبة (سم)  </span>
-            <input type="text" class="input__form" placeholder="">
+
+          <div class=" deatails   ">
+            <div class="dt-text">
+              <p class="p-fast">نسبة الدهون</p>
+              <p class="p-fast"> وزن الدهون</p>
+              <p class="p-fast"> وزن الكتلة اللادهنية</p>
+              <p class="p-fast"> فئة الدهون</p>
+
+            </div>
+            <div class="dt-text">
+              <p class="p-fast">0 %</p>
+              <p class="p-fast"> 0 كجم</p>
+              <p class="p-fast"> 0 كجم</p>
+              <p class="p-fast">0 كجم</p>
+
+            </div>
+
+
           </div>
-          <div class="input-box">
-            <span class="details"> الوسط (سم)  </span>
-            <input type="text" class="input__form" placeholder="">
+        </form>
+        <div class="row   content  mt-5">
+          <div class="col-md-6">
+            <h5>الطريقة الصحيحة لأخذ القياسات</h5>
+            <p class="mt-5">يتم أخذ أصغر مقاس للرقبة تحت الحنجرة (تفاحة آدم) ومقاس الوسط فوق الصرة (ارفع مكان) وقم
+              بادخال
+              المقاسات على الحاسبة</p>
           </div>
-          <div class="input-box d-none" id="newInput">
-            <span class="details ">  المؤخرة (سم)  </span>
-            <input type="text" class="input__form" placeholder="" id="newInput">
+          <div class="col-md-6">
+            <img class="w-100" id="image-change" src="../assets/fastM.png" alt="">
           </div>
-        </div>
-        <div class="btn__form">
-          <button class="btn__form-index">احسب</button>
 
         </div>
+      </div>
+    </section>
+    <section>
 
-        <div class=" deatails   ">
-          <div class="dt-text">
-            <p class="p-fast">نسبة الدهون</p>
-            <p class="p-fast"> وزن الدهون</p>
-            <p class="p-fast"> وزن الكتلة اللادهنية</p>
-            <p class="p-fast"> فئة الدهون</p>
+    </section>
 
+
+
+    <footer class="">
+      <div class=" footer-h  ">
+        <div class="text-footer  ">
+          <h4>أحصل على نظامك الصحي <span>نظامك الصحي </span>اليوم!</h4>
+          <p>احصل على نظامك الصحي اليوم...الان</p>
+          <button>إبدأ الآن</button>
+          <div>
+
+            <div class="">
+            </div>
+
+            <div class="head-ul">
+              <ul>
+                <div class="head">فطرة</div>
+
+                <li> <a href="">الرئيسية</a></li>
+                <li> <a href="">من نحن</a></li>
+                <li> <a href="">خدماتنا</a></li>
+                <li> <a href="">تواصل معنا</a></li>
+              </ul>
+              <ul>
+                <div class="head">الدعم</div>
+
+                <li> <a href="">اضافة رابط تويتر</a></li>
+                <li> <a href="">اضافة رابط لينكيد ان</a></li>
+                <li> <a href="">اضافة رابط فيس بوك</a></li>
+                <li> <a href="">اضافة رابط انستجرام</a></li>
+                <li></li>
+              </ul>
+              <ul class="list-ul">
+                <div class="head">الشروط و الأحكام</div>
+
+                <li> <a href="">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    8001240268
+                    <i></i>
+                  </a></li>
+                <li> <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    اسكندرية كلية الهندسة
+                  </a></li>
+                <li> <a href="">
+                    <i class="fa-solid fa-globe"></i>
+                    www.qpolicy.com.sa</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="dt-text">
-            <p class="p-fast">0 %</p>
-            <p class="p-fast"> 0 كجم</p>
-            <p class="p-fast"> 0 كجم</p>
-            <p class="p-fast">0 كجم</p>
-
-          </div>
-
-
         </div>
-      </form>
-      <div class="row   content  mt-5">
-        <div class="col-md-6">
-          <h5>الطريقة الصحيحة لأخذ القياسات</h5>
-          <p class="mt-5">يتم أخذ أصغر مقاس للرقبة تحت الحنجرة (تفاحة آدم) ومقاس الوسط فوق الصرة (ارفع مكان) وقم بادخال
-            المقاسات على الحاسبة</p>
-        </div>
-        <div class="col-md-6">
-          <img class="w-100" id="image-change" src="../assets/fastM.png" alt="">
+
+        <!--  -->
+        <div class="image-footer  ">
+
+          <img src="assets/footer-image.png" alt="">
         </div>
 
       </div>
-    </div>
+    </footer>
   </section>
-  <section>
-
-  </section>
-
-
-
-  <footer class="">
-    <div class=" footer-h  ">
-    <div class="text-footer  ">
-  <h4>أحصل على نظامك الصحي  <span>نظامك الصحي </span>اليوم!</h4>
-  <p>احصل على نظامك الصحي اليوم...الان</p>
-  <button>إبدأ الآن</button>
-  <div>
-
-  <div class="">
-  </div>
-
-  <div class="head-ul">
-  <ul>
-  <div class="head">فطرة</div>
-
-  <li> <a href="">الرئيسية</a></li>
-  <li> <a href="">من نحن</a></li>
-  <li> <a href="">خدماتنا</a></li>
-  <li> <a href="">تواصل معنا</a></li>
-  </ul>
-  <ul>
-  <div class="head">الدعم</div>
-
-  <li> <a href="">اضافة رابط تويتر</a></li>
-  <li> <a href="">اضافة رابط لينكيد ان</a></li>
-  <li> <a href="">اضافة رابط فيس بوك</a></li>
-  <li> <a href="">اضافة رابط انستجرام</a></li>
-  <li></li>
-  </ul>
-  <ul class="list-ul">
-  <div class="head">الشروط و الأحكام</div>
-
-  <li> <a href="">
-    <i class="fa-solid fa-phone-flip"></i>
-    8001240268
-  <i></i>
-  </a></li>
-  <li> <a href="">
-    <i class="fa-solid fa-location-dot"></i>
-
-    اسكندرية كلية الهندسة
-  </a></li>
-  <li> <a href="">
-    <i class="fa-solid fa-globe"></i>
-    www.qpolicy.com.sa</a></li>
-  </ul>
-  </div>
-  </div>
-    </div>
-
-    <!--  -->
-    <div class="image-footer  ">
-
-  <img src="assets/Animation - 1699977968880.gif" alt="">
-    </div>
-
-  </div>
-  </footer>
-</section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
@@ -293,4 +297,3 @@
 </body>
 
 </html>
-

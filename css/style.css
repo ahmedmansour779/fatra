@@ -2867,3 +2867,30 @@ footer {
 .user-details .input-box:last-child {
     width: 100%;
 }
+
+.image-footer {
+    height: 100%;
+    width: 20rem;
+}
+
+.image-footer img {
+    height: 100%;
+    width: 100%;
+}
+
+.btns-meals {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.btns-meals button {
+    padding: 0;
+}
+
+.btns-meals button a {
+    margin: 0;
+    width: 100% !important;
+    display: block;
+}
