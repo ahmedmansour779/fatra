@@ -406,3 +406,11 @@ form {
     flex-direction: column;
   }
 }
+
+.image-recipes-new {
+  width: 50vw;
+}
+
+.image-recipes-new img {
+  width: 100%;
+}
