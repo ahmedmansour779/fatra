@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Mulish:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
 :root {
     --bg-color: #07D184;
     --text-color: #FFFFFF;
@@ -7,25 +7,31 @@
     --shadow-set: inset 0px 11px 8px -10px rgba(255, 255, 255, 0.5),
         inset 0px -11px 8px -10px rgba(0, 0, 0, 0.2);
 }
-body{
+
+body {
     font-family: 'Mulish', sans-serif;
 }
 
-.text-hero{margin-top: 50px;}
-.text-hero h4{
+.text-hero {
+    margin-top: 50px;
+}
+
+.text-hero h4 {
     margin-bottom: 50px;
     text-align: center;
     color: white;
-     font-size: 60px;
-     font-family: Plus Jakarta Sans;
-     font-weight: 800;
-     word-wrap: break-word;
+    font-size: 60px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 800;
+    word-wrap: break-word;
 }
+
 @media (max-width:767px) {
-.text-hero h4{
-    font-size: 40px;
+    .text-hero h4 {
+        font-size: 40px;
+    }
 }
-}
+
 .circle {
     overflow: hidden;
     display: flex;
@@ -35,6 +41,7 @@ body{
     top: 250px;
     z-index: -1;
 }
+
 .circlee {
     overflow: hidden;
     display: flex;
@@ -45,53 +52,53 @@ body{
     z-index: -1;
 }
 
-.day-call{
+.day-call {
 
     margin-top: 100px;
     /* border: 1px solid red; */
-display: flex;
-height: 800px;
-flex-direction: column;
-align-items: center;
-width: 80%;
-margin: 0 auto;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
-.his-form{
+
+.his-form {
     border-radius: 32px;
-background-color: #fff;
-    margin:  0 auto;
-    width: 90%;
-    height: 600px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-/* border: 1px solid red; */
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1rem;
+
 }
-.his-form input{
-outline: none;
-padding: 15px;
-margin: 0 auto  ;
-    width: 90%;
-    height: 80px;
-    border-radius: 32px;
+
+.his-form input {
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
     font-size: 1.2rem;
     border: 1px #ccc solid;
 }
-.his-form label{
-    margin-top: 30px;
-    margin-bottom: 20px;
-align-self:start ;
-margin-right: 7%;
-color: rgba(10, 4, 60, 0.85);
-font-size: 24px;
-font-weight: 700;
-text-transform: capitalize;
-line-height: 30px;
-word-wrap: break-word;
+
+.his-form label {
+    align-self: start;
+    color: rgba(10, 4, 60, 0.85);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 30px;
+    word-wrap: break-word;
 }
-.btn-save{
+
+.btn-save {
     width: 170px;
     height: 50px;
     box-shadow: var(--shadow-set);
@@ -107,6 +114,12 @@ word-wrap: break-word;
     word-wrap: break-word;
     background-color: var(--btn-color);
 }
-.btn-save:hover{
+
+.btn-save a {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-save:hover {
     color: #fff;
 }

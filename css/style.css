@@ -2896,3 +2896,9 @@ footer {
     width: 100% !important;
     display: block;
 }
+
+@media (max-width: 425px) {
+    .table {
+        font-size: 0.6rem;
+    }
+}

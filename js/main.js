@@ -1,7 +1,25 @@
 const searchInput = document.getElementById("search-input")
 const backgroundSidebar = document.getElementById("backgroundSidebar")
 
+// input date
 
+const inputDate = document.getElementById("myDateInput")
+window.onload = () => {
+  inputDate.click()
+}
+
+// Set the current date as the default value
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+const day = currentDate.getDate().toString().padStart(2, '0');
+const formattedDate = `${year}-${month}-${day}`;
+inputDate.value = formattedDate;
+
+
+// Trigger the date picker to show on page load
+
+// end
 function show() {
   document.getElementById("sidebar").classList.toggle("active");
 }
@@ -205,4 +223,6 @@ function previewImage(input) {
   }
 }
 
-// hide side bar 
+// edit
+
+;

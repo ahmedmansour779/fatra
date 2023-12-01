@@ -5,8 +5,9 @@
     margin-top: 80px;
     position: relative;
 }
+
 .text-section-hour-sleep h4 {
-margin-bottom: 50px;
+    margin-bottom: 50px;
     margin-right: 40px;
 
     color: white;
@@ -16,45 +17,48 @@ margin-bottom: 50px;
     line-height: 34px;
     letter-spacing: 0.50px;
     word-wrap: break-word
+}
 
-}
-.line{
+.line {
     position: absolute;
-top: 130%;
-width: 120px;
-height: 3px;
-border: 2px solid white;
-margin-right: 30px;
+    top: 130%;
+    width: 120px;
+    height: 3px;
+    border: 2px solid white;
+    margin-right: 30px;
 }
+
 .input-hours {
     /* border: 1px solid red; */
     display: flex;
     align-items: start;
 
 }
-.input-hours form{
-    display: flex;
 
+.input-hours form {
+    display: flex;
+    width: 100%;
     flex-direction: column;
 
     background: transparent !important;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 
 .input-hours-flex {
     display: flex;
-    /* margin-top: 50px; */
+    flex-wrap: wrap;
     margin-right: 20px;
     gap: 2rem;
 }
+
 .result {
 
-   /* margin: auto; */
+    /* margin: auto; */
 
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
 
 }
@@ -81,9 +85,9 @@ justify-content: center;
 .input-colum {
 
     display: flex;
-align-items: start;
-flex-direction: column;
-/* gap: 1rem; */
+    align-items: start;
+    flex-direction: column;
+    /* gap: 1rem; */
 
 }
 
@@ -110,46 +114,51 @@ flex-direction: column;
     line-height: 24px;
     word-wrap: break-word
 }
-.text-result{
-margin-top: 50px;
+
+.text-result {
+    margin-top: 50px;
 
 }
-.text-h3{
+
+.text-h3 {
     position: relative;
 
 }
-.line2{
+
+.line2 {
     position: absolute;
     width: 230px;
     height: 1px;
     border: 1px solid white;
-bottom: -20px;
+    bottom: -20px;
 }
+
 .text-result h3 {
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: Plus Jakarta Sans;
     font-weight: 700;
     line-height: 20px;
     word-wrap: break-word
-
 }
 
 .text-result ul li {
     list-style: initial;
     margin-right: 50px;
     color: white;
-    font-size: 28px;
+    font-size: 1.2rem;
     font-family: Plus Jakarta Sans;
     font-weight: 500;
     line-height: 53.50px;
     word-wrap: break-word
 }
+
 @media (max-width:767px) {
-.input-hours-flex{
-    display: block;
-}
-.input-hours-flex input{
-   width: 90%;
-}
+    .input-hours-flex {
+        display: block;
+    }
+
+    .input-hours-flex input {
+        width: 90%;
+    }
 }
