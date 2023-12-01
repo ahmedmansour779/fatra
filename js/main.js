@@ -84,7 +84,7 @@ function toggleSidebar() {
   // let meals = document.getElementById("meals");
 
   if (sidebar.style.right === "-256px") {
-    sidebar.style.right = "-17px";
+    sidebar.style.right = "0 !important";
     // content.style.marginRight = "256px";
     // meals.style.marginRight = "256px";
   } else {

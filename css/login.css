@@ -108,18 +108,21 @@ input:focus~label {
 }
 
 .btn-register {
-
     padding-top: 2rem;
-
+    display: block;
+    width: 100%;
+    direction: ltr;
 }
 
 .btn-register button {
     border-radius: 32px;
     border: none;
     background: var(--btn-color);
-    width: 180px;
     height: 60px;
     box-shadow: var(--shadow-set);
+    display: block;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -127,7 +130,9 @@ input:focus~label {
     color: var(--text-color);
     font-size: 24px;
     font-weight: bold;
-
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
 }
 
 .btn-register-platform {
@@ -343,5 +348,11 @@ input:focus~label {
 
     .image-avatar img {
         width: 100%;
+    }
+}
+
+@media (max-width :600px) {
+    .text-input>input {
+        width: 100% !important;
     }
 }

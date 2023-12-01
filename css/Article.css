@@ -54,6 +54,11 @@ input::placeholder {
    line-height: 75.6px;
 }
 
+.articlesContent button,
+.articlesContent button:active {
+   font-weight: bold;
+}
+
 
 .articlesContent ul li {
    cursor: pointer;
