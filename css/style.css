@@ -973,6 +973,8 @@ li {
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    list-style-position: inside;
+    font-size: 1.2rem;
 }
 
 ul li a {
