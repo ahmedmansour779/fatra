@@ -4,17 +4,17 @@ const backgroundSidebar = document.getElementById("backgroundSidebar")
 // input date
 
 const inputDate = document.getElementById("myDateInput")
-window.onload = () => {
-  inputDate.click()
+// Set the current date as the default value
+
+if (inputDate) {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+  const day = currentDate.getDate().toString().padStart(2, '0');
+  const formattedDate = `${year}-${month}-${day}`;
+  inputDate.value = formattedDate;
 }
 
-// Set the current date as the default value
-const currentDate = new Date();
-const year = currentDate.getFullYear();
-const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-const day = currentDate.getDate().toString().padStart(2, '0');
-const formattedDate = `${year}-${month}-${day}`;
-inputDate.value = formattedDate;
 
 
 // Trigger the date picker to show on page load
@@ -78,20 +78,27 @@ function hiddenBackgroundSidebar() {
   backgroundSidebar.style.display = "none"
 }
 
+
+
 function toggleSidebar() {
   // let sidebar = document.querySelector(".sideBar");
   // let content = document.querySelector(".content");
   // let meals = document.getElementById("meals");
 
-  if (sidebar.style.right === "-256px") {
-    sidebar.style.right = "0 !important";
-    // content.style.marginRight = "256px";
-    // meals.style.marginRight = "256px";
-  } else {
-    sidebar.style.right = "-256px";
-    content.style.marginRight = "0";
-    // meals.style.marginRight = "0";
-  }
+  // if (sidebar.style.right === "-256px") {
+  //   sidebar.style.right = "0 !important";
+  //   // content.style.marginRight = "256px";
+  //   // meals.style.marginRight = "256px";
+  // } else {
+  //   sidebar.style.right = "-256px";
+  //   content.style.marginRight = "0";
+  //   // meals.style.marginRight = "0";
+  // }
+
+  sidebar.style.right === "-256px" ?
+    sidebar.style.right = "0" :
+    sidebar.style.right = "-256px"
+
   showBackgroundSidebar()
   // backgroundSidebar.style.display = "block"
 }
@@ -123,17 +130,21 @@ function decrement(cardId) {
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+if (dropdown) {
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
 }
+
+
 // =-=-=-=-=-=-==-=-=-==========Dark Mood===============
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -187,16 +198,20 @@ function toggleSearchContainer() {
   hiddenIcons()
 }
 
-activeButton.addEventListener("click", function () {
-  activeButton.classList.add("activeButton");
-  activeButtonWomen.classList.remove("activeButton");
-});
+if (activeButton) {
+  activeButton.addEventListener("click", function () {
+    activeButton.classList.add("activeButton");
+    activeButtonWomen.classList.remove("activeButton");
+  });
 
-activeButtonWomen.addEventListener("click", function () {
-  activeButton.classList.remove("activeButton");
+  activeButtonWomen.addEventListener("click", function () {
+    activeButton.classList.remove("activeButton");
 
-  activeButtonWomen.classList.add("activeButton");
-});
+    activeButtonWomen.classList.add("activeButton");
+  });
+}
+
+
 
 
 
@@ -225,4 +240,14 @@ function previewImage(input) {
 
 // edit
 
-;
+const btnSidebarNew = document.getElementById("sideBar")
+const sidebarNew = document.getElementById("closeSideBar")
+
+console.log(sidebarNew);
+
+if (btnSidebarNew && sidebarNew) {
+  function toggleSidebarNew() {
+    sidebarNew.style.right = 0
+  }
+}
+
