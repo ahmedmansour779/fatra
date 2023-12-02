@@ -150,29 +150,49 @@ if (dropdown) {
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const toggleBtn = document.getElementById("toggleBtn");
+  const lightModeDiv = document.getElementById("light-mode-div")
+  const darkModeDiv = document.getElementById("dark-mode-div")
+  const lightModeIcon = document.getElementById("light-mode-icon")
+  const darkModeIcon = document.getElementById("dark-mode-icon")
+  console.log(lightModeIcon);
+
 
   if (localStorage.getItem("dark") === "enabled") {
     enableDarkMode();
   }
 
-  toggleBtn.addEventListener("click", function () {
-    if (body.classList.contains("dark")) {
-      // Disable dark mode
-      disableDarkMode();
-    } else {
-      // Enable dark mode
-      enableDarkMode();
-    }
-  });
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", function () {
+      if (body.classList.contains("dark")) {
+        // Disable dark mode
+        disableDarkMode();
+      } else {
+        // Enable dark mode
+        enableDarkMode();
+      }
+    });
+  }
+
+
 
   function enableDarkMode() {
     body.classList.add("dark");
     localStorage.setItem("darkMode", "enabled");
+    darkModeDiv.classList.replace("not-active-mode-div", "active-mode-div");
+    darkModeIcon.classList.replace("not-active-mode-icon", "active-mode-icon");
+
+    lightModeDiv.classList.replace("active-mode-div", "not-active-mode-div");
+    lightModeIcon.classList.replace("active-mode-icon", "not-active-mode-icon");
   }
 
   function disableDarkMode() {
     body.classList.remove("dark");
     localStorage.setItem("darkMode", null);
+    lightModeDiv.classList.replace("not-active-mode-div", "active-mode-div");
+    lightModeIcon.classList.replace("not-active-mode-icon", "active-mode-icon");
+
+    darkModeDiv.classList.replace("active-mode-div", "not-active-mode-div");
+    darkModeIcon.classList.replace("active-mode-icon", "not-active-mode-icon");
   }
 });
 var activeButton = document.getElementById("activeButton");
@@ -180,23 +200,34 @@ var activeButtonWomen = document.getElementById("activeButtonWomen");
 // search side
 const searchContainer = document.getElementById("search-container");
 // console.log(searchContainer);
-function toggleInputSearch() {
-  searchInput.focus();
-  searchInput.style.display === "none" ?
-    searchInput.style.display = "block" :
-    searchInput.style.display = "none"
+
+if (searchInput) {
+  function toggleInputSearch() {
+    searchInput.focus();
+    searchInput.style.display === "none" ?
+      searchInput.style.display = "block" :
+      searchInput.style.display = "none"
+  }
 }
 
-function hiddenIcons() {
-  searchContainer.style.display === "none" ?
-    searchContainer.style.display = "block" :
-    searchContainer.style.display = "none"
+if (searchContainer) {
+  function hiddenIcons() {
+    searchContainer.style.display === "none" ?
+      searchContainer.style.display = "block" :
+      searchContainer.style.display = "none"
+  }
 }
 
+
+console.log(searchContainer);
+
+// if (searchInput && searchContainer) {
 function toggleSearchContainer() {
-  toggleInputSearch()
   hiddenIcons()
 }
+
+// }
+
 
 if (activeButton) {
   activeButton.addEventListener("click", function () {
