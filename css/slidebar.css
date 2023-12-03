@@ -92,11 +92,12 @@ body {
   font-size: 30px;
   line-height: 34px;
   color: #07d184;
+  width: max-content;
 }
 
 .toggle-btn i {
-  width: 26px;
-  height: 26px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .search {
@@ -180,6 +181,7 @@ body {
   margin-left: 0px;
   position: relative;
   padding-right: 15px;
+  gap: 0.5rem;
 }
 
 .input-navbar-side i {

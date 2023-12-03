@@ -2916,6 +2916,7 @@ footer {
     background-size: cover;
     gap: 2rem;
     position: absolute;
+    margin-top: 2rem;
 }
 
 .background-footer {
@@ -3155,6 +3156,8 @@ footer {
 .search-header input:focus {
     background: none !important;
     border: none !important;
+    box-shadow: none;
+    width: auto !important;
 }
 
 @media (max-width: 425px) {
@@ -3203,5 +3206,21 @@ footer {
 }
 
 .dropdown-toggle::after {
-    content: none;
+    content: none !important;
+}
+
+@media (min-width: 1024px) {
+    .show-in-phone {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .show-in-large {
+        display: none !important;
+    }
+}
+
+#meals {
+    margin-top: 2rem;
 }

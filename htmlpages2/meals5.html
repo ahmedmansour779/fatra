@@ -23,7 +23,7 @@
     <div class="side">
       <div class="toggle-btn">
         <div class="content to-be-fixed">
-          <div class="new-header">
+          <div class="new-header show-in-phone">
             <div class="container">
               <div class="logo-header">
                 <img src="../assets/Logo.png" alt="logo" />
@@ -35,9 +35,7 @@
                   </div>
                   <input type="text" name="search" />
                 </div>
-                <div>
-                  <!-- <i id="toggleBtn" class="fa-solid fa-moon"></i> -->
-                </div>
+
                 <div class="mode-change" id="toggleBtn">
                   <div class="active-mode-div" id="light-mode-div">
                     <svg class="active-mode-icon" id="light-mode-icon" xmlns="http://www.w3.org/2000/svg" width="17"
@@ -64,7 +62,7 @@
                     </svg>
                   </div>
                 </div>
-                <div>
+                <div style="display: flex; align-items: center;">
                   <li class="dropdown">
                   <li style="padding: 0;" class="btn  dropdown-toggle drowpdownNameUser" type="button"
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -109,7 +107,7 @@
                   </ul>
                   </li>
                 </div>
-                <div>
+                <div style="display: flex; align-items: center;">
                   <div class="user">
                     <li class="dropdown">
                     <li style="padding: 0;" class="btn  dropdown-toggle drowpdownNameUser" type="button"
@@ -128,6 +126,105 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="content show-in-large">
+            <div class=" content-form " style="margin: 0;">
+              <i style="color: #07d184 !important;width: 2rem;height: 2rem;" onclick="toggleSidebar()" id="sideBar"
+                class="fa-solid fa-bars"></i>
+              <h6> الصفحة الرئيسية </h6>
+            </div>
+            <div class="  ">
+              <form action="" class="formAction">
+                <div class="nav-form">
+                  <div class="input-navbar-side" id="search-icon">
+                    <i class="fa-solid fa-search  search-icon" onclick="toggleSearchContainer()"></i>
+                    <input type="search" class="search-input">
+                  </div>
+                  <div class="icons-navbar " id="search-container">
+                    <div class="icon-nav ">
+                      <div>
+                        <i id="toggleBtn" class="fa-solid fa-moon"></i>
+                      </div>
+                      <div class="globe ">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
+                      </div>
+                      <div>
+                        <li class="dropdown">
+                        <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/Notifications.png" style="width: 18px;" class="fa-bell" alt="">
+                        </li>
+                        <ul class="dropdown-menu Notifications-menu " aria-labelledby="dropdownMenuButton1">
+
+                          <li>
+                            <a class="dropdown-item" href="../subscription.html">
+                              <div class="Notifications">
+                                <div>
+                                  <img src="../assets/Icon.png" alt="">
+                                </div>
+                                <div>
+                                  <h5>تذكير</h5>
+                                  <p>لقد اقترب موعد قياس الدهون</p>
+                                </div>
+                                <div>
+                                  <img src="../assets/Close button.png" alt="">
+                                </div>
+                              </div>
+
+                            </a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="../subscription.html">
+                              <div class="Notifications">
+                                <div>
+                                  <img src="../assets/Icon.png" alt="">
+                                </div>
+                                <div>
+                                  <h5>تذكير</h5>
+                                  <p>لقد اقترب موعد قياس الدهون</p>
+                                </div>
+                                <div>
+                                  <img src="../assets/Close button.png" alt="">
+                                </div>
+                              </div>
+
+                            </a>
+                          </li>
+
+
+
+                        </ul>
+                        </li>
+                      </div>
+                      <div class="user">
+                        <i class="fa-solid fa-gear"></i>
+                        <li class="dropdown">
+                        <li class="btn  dropdown-toggle drowpdownNameUser" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          الاعدادات
+                        </li>
+
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="../subscription.html">الاشتراك في المتابعات</a></li>
+                          <li><a class="dropdown-item" href="../phone-col.html"> طلب مكالمة خاصة</a></li>
+                          <li><a class="dropdown-item" href="../history.html">سجل نشاطك اليومي </a></li>
+                          <li><a class="dropdown-item" href="information.html">بياناتي </a></li>
+                          <li><a class="dropdown-item" href="register.html"> تسجيل خروج </a></li>
+                        </ul>
+                        </li>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+
+
+
             </div>
           </div>
         </div>
@@ -255,6 +352,8 @@
     </div>
 
   </div>
+  <div class="background-sidebar" id="backgroundSidebar" onclick="handleBtnClose()"></div>
+
   <script src="js/main.js"></script>
 </body>
 

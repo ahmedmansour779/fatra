@@ -96,7 +96,7 @@ function toggleSidebar() {
   // }
 
   sidebar.style.right === "-256px" ?
-    sidebar.style.right = "0" :
+    sidebar.style.right = "-5px" :
     sidebar.style.right = "-256px"
 
   showBackgroundSidebar()
@@ -278,6 +278,6 @@ console.log(sidebarNew);
 
 if (btnSidebarNew && sidebarNew) {
   function toggleSidebarNew() {
-    sidebarNew.style.right = 0
+    sidebarNew.style.right = "-5px"
   }
 }
